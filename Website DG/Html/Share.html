@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daggerheart Monster Hub</title>
+    <link rel="stylesheet" href="/Css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Old English Text MT:wght@400&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Old Standard TT:wght@400&display=swap" />
+      <link rel="stylesheet" href="/Css/style.css">
+<body>
+    <img class="background-image" src="/Img/BgOldPaper.png" alt="Background"/>
+        <div class="shareoptions">
+            <header>
+                <h1>Share</h1> 
+            </header>
+        </div>
+           
+            <nav class="navbar">
+                <ul class="nav-txt">
+                <li><a href="index.html" class="monsters-dice">Monsters & Dice Rolls</a></li>
+                <li><a href="/Html/Share.html" class="monsters">Share</a></li>
+            </ul>
+          </nav>
+
+          <div class = "container-share-comment-rating">
+            <div class="share-box">
+                <p>Link do projeto</p><br><br>
+                <p><a href="https://github.com/" target="_blank">Github</a></p>
+            </div>
+                <div class="rating-box">
+                    <h2>Avalie o projeto</h2>
+                    <br>
+                    <form action="/php/Imagem.php" method="POST"> <!-- php adicionado aqui -->
+                        <label for="rating">Nota:</label>
+                        <select name="rating" id="rating" class="list-rating">
+                            <option value="1">1 Estrela</option>
+                            <option value="2">2 Estrelas</option>
+                            <option value="3">3 Estrelas</option>
+                            <option value="4">4 Estrelas</option>
+                            <option value="5">5 Estrelas</option>
+                        </select>
+                        <button type="button" class="enviar-rating">Enviar</button>
+                        <br><br>
+                    </form>
+                </div>
+
+                <div class="comment-box">
+                    <h2>Deixe seu comentário:</h2>
+                    <textarea name="comment" rows="6" cols="50" placeholder="Escreva aqui..." class="comment-section"></textarea><br>
+                    <input type="submit" value="Enviar" class="enviar-comment">
+                </div>
+            </div>
+
+            <!-- Exibe as avaliações e comentários da sessão 
+            <div class="feedback">
+            <?php
+            if (isset($_SESSION['comentario'])) {
+                echo "<p><strong>Comentário:</strong> " . $_SESSION['comentario'] . "</p>";
+            }
+
+            if (isset($_SESSION['pontuacao'])) {
+                echo "<p><strong>Pontuação:</strong> " . $_SESSION['pontuacao'] . " estrela(s)</p>";
+            }
+            ?>
+            -->
+        </div>
+        
+        <footer>
+            <div class="backbutton">
+                <a href="index.html" ><p>Voltar</p></a>
+            </div>
+        </footer>
+</body>
+</html>

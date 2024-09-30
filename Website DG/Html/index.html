@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daggerheart Monster Hub</title>
+    <link rel="stylesheet" href="/Css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Old English Text MT:wght@400&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Old Standard TT:wght@400&display=swap" />
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1 class="daggerheart-title">Daggerheart</h1>
+        <h1 class="monster-hub-title">Monster Hub</h1>
+      </div>
+      <nav class="navbar">
+        <ul class="nav-txt">
+          <!--<li><a href="#" class="home">Home</a> </li>-->
+          <li><a href="#" class="monsters-dice">Monsters & Dice Rolls</a></li>
+          <li><a href="Share.html" class="monsters">Share</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <div class="img-box">
+        <div class="d4-container">
+          <img class="d4-img" src="/Img/d4 (1).png" alt="d4 dice" />
+          <div class="button-container d4-problem">
+            <button class="dice-button-minus">-</button>
+            <span class="dice-value">0</span>
+            <button class="dice-button-plus">+</button>
+          </div>
+        </div>
+        <div class="d6-container">
+          <img class="d6-img" src="/Img/d6.png" alt="d6 dice" />
+          <div class="button-container">
+            <button class="dice-button-minus">-</button>
+            <span class="dice-value">0</span>
+            <button class="dice-button-plus">+</button>
+          </div>
+        </div>
+
+        <div class="d8-container">
+          <img class="d8-img" src="/Img/d8.png" alt="d8 dice" />
+          <div class="button-container d4-problem">
+            <button class="dice-button-minus">-</button>
+            <span class="dice-value">0</span>
+            <button class="dice-button-plus">+</button>
+          </div>
+        </div>
+        <div class="d10-container">
+          <img class="d10-img" src="/Img/d10.png" alt="d10 dice" />
+          <div class="button-container">
+            <button class="dice-button-minus">-</button>
+            <span class="dice-value">0</span>
+            <button class="dice-button-plus">+</button>
+          </div>
+        </div>
+        <div class="d12-container">
+          <img class="d12-img" src="/Img/d12.png" alt="d12 dice" />
+          <div class="button-container">
+            <button class="dice-button-minus">-</button>
+            <span class="dice-value">0</span>
+            <button class="dice-button-plus">+</button>
+          </div>
+        </div>
+        <div class="d20-container">
+          <img class="d20-img" src="/Img/d20.png" alt="d20 dice" />
+          <div class="button-container">
+            <button class="dice-button-minus">-</button>
+            <span class="dice-value">0</span>
+            <button class="dice-button-plus">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="monster-info-container">
+      <div class="monster-info-left">
+        <label
+          ><strong>Monster(s):</strong><input type="text" class="input-field"
+        /></label>
+        <label
+          ><strong>Tier:</strong><input type="text" class="input-field"
+        /></label>
+        <label
+          ><strong>Type:</strong><input type="text" class="input-field"
+        /></label>
+        <label
+          ><strong>Difficulty:</strong><input type="text" class="input-field"
+        /></label>
+        <label
+          ><strong>Attack Modifier:</strong
+          ><input type="text" class="input-field"
+        /></label>
+        <label
+          ><strong>Main Attack:</strong><input type="text" class="input-field"
+        /></label>
+
+        <div class="damage-container">
+          <p>
+            <strong>Minor</strong> | <strong>Major</strong> |
+            <strong>Severe</strong>
+          </p>
+
+          <div class="hp-container">
+            <p><strong>HP:</strong></p>
+            <div class="hp-boxes">
+              <div class="hp-box"></div>
+              <div class="hp-box"></div>
+              <div class="hp-box"></div>
+              <div class="hp-box"></div>
+              <div class="hp-box"></div>
+              <div class="hp-box"></div>
+            </div>
+          </div>
+
+          <div class="stress-container">
+            <p><strong>Stress:</strong></p>
+            <div class="stress-boxes">
+              <div class="stress-box"></div>
+              <div class="stress-box"></div>
+              <div class="stress-box"></div>
+              <div class="stress-box"></div>
+              <div class="stress-box"></div>
+              <div class="stress-box"></div>
+              <div class="stress-box"></div>
+            </div>
+          </div>
+
+          <label
+            ><strong>Experience:</strong><input type="text" class="input-field"
+          /></label>
+        </div>
+      </div>
+
+      <div class="monster-info-right">
+        <label><strong>Features:</strong></label>
+        <textarea class="features-input"></textarea>
+
+        <div class="image-upload-container">
+          <label for="image-upload" class="image-upload-label"
+            >Upload Character Image</label
+          >
+          <input
+            type="file"
+            id="image-upload"
+            accept="image/*"
+            class="image-upload-input" />
+          <img
+            id="character-image"
+            src=""
+            alt="Character Image"
+            class="character-image" />
+        </div>
+      </div>
+    </div>
+
+    <img class="background-image" src="/Img/BgOldPaper.png" alt="Background" />
+    <main class="main-container">
+      <section class="welcome"></section>
+      <section class="how-it-works"></section>
+    </main>
+  </body>
+</html>
+
+<!--
+
+ADICIONA IMAGEM PERFIL
+<form action="feedback.php" method="POST" enctype="multipart/form-data">
+    <label for="imagemPerfil">Selecione a imagem de perfil:</label>
+    <input type="file" name="imagemPerfil" id="imagemPerfil" required>
+    <input type="submit" value="Enviar Imagem">
+</form>
+
+ATUALIZA IMAGEM PERFIL
+<form action="feedback.php" method="POST" enctype="multipart/form-data">
+    <label for="novaImagem">Selecione uma nova imagem de perfil:</label>
+    <input type="file" name="novaImagem" id="novaImagem" required>
+    <input type="hidden" name="acao" value="atualizar">
+    <input type="submit" value="Atualizar Imagem">
+</form>
+
+DELETA IMAGEM PERFIL
+<form action="feedback.php" method="POST">
+    <input type="hidden" name="acao" value="deletar">
+    <input type="submit" value="Deletar Imagem de Perfil">
+</form>
+
+-->
+<script>
+  // Selecionar todas as caixas de HP e Stress
+  const hpBoxes = document.querySelectorAll(".hp-box");
+  const stressBoxes = document.querySelectorAll(".stress-box");
+
+  // Função para alternar a classe 'active' nos quadrados clicados
+  hpBoxes.forEach((box) => {
+    box.addEventListener("click", () => {
+      box.classList.toggle("active");
+    });
+  });
+
+  stressBoxes.forEach((box) => {
+    box.addEventListener("click", () => {
+      box.classList.toggle("active");
+    });
+  });
+
+  const imageUploadInput = document.getElementById("image-upload");
+  const characterImage = document.getElementById("character-image");
+
+  // Função para mostrar a imagem quando o usuário faz o upload
+  imageUploadInput.addEventListener("change", function (event) {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        characterImage.src = e.target.result;
+        characterImage.style.display = "block";
+      };
+      reader.readAsDataURL(file);
+    }
+  });
+</script>
